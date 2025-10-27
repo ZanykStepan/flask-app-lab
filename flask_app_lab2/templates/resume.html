@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-4">
+    <section class="text-center mb-5">
+        <h1 class="fw-bold mb-3">Про себе</h1>
+        <img src="{{ url_for('static', filename='images/img.jpg') }}" alt="Моє фото"
+             class="rounded-circle shadow mb-3 img-hover"
+             width="160" height="160">
+        <p class="lead">
+            Я — <strong>Степан Заник</strong>, 19 років. <br>
+            Студент, який активно навчається та розвивається в напрямку IT та розробки.
+        </p>
+    </section>
+
+    <section class="mb-5">
+        <h2 class="fw-semibold border-bottom pb-2 mb-4">Освіта</h2>
+        <div class="ps-2">
+
+            <div class="card mb-3 shadow-sm border-0 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                        Івано-Франківський фаховий коледж ПНУ ім. В. Стефаника
+                    </h5>
+                    <p class="card-text text-muted mb-1">Спеціальність: <strong>113 Прикладна математика</strong></p>
+                    <p class="card-text text-muted mb-1">Освітній рівень: ПЗСО</p>
+                    <p class="card-text text-muted">Роки навчання: 2021 — 2023</p>
+                </div>
+            </div>
+
+            <div class="card mb-3 shadow-sm border-0 bg-light">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">
+                        Карпатський національний університет імені Василя Стефаника
+                    </h5>
+                    <p class="card-text text-muted mb-1">Спеціальність: <strong>121 Інженерія програмного
+                        забезпечення</strong></p>
+                    <p class="card-text text-muted mb-1">Освітній рівень: Бакалавр</p>
+                    <p class="card-text text-muted">Роки навчання: 2023 — до тепер</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2 class="fw-semibold border-bottom pb-2 mb-4">Навички</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+            <div class="col"><div class="p-3 bg-light rounded shadow-sm">HTML, CSS, JavaScript</div></div>
+            <div class="col"><div class="p-3 bg-light rounded shadow-sm">Python, C++, Java, PHP</div></div>
+            <div class="col"><div class="p-3 bg-light rounded shadow-sm">Git, GitHub</div></div>
+            <div class="col"><div class="p-3 bg-light rounded shadow-sm">PostgreSQL, MySQL</div></div>
+            <div class="col"><div class="p-3 bg-light rounded shadow-sm">Figma, Canva, Photoshop</div></div>
+            <div class="col"><div class="p-3 bg-light rounded shadow-sm">Notion, Google Workspace</div></div>
+        </div>
+    </section>
+
+    <section class="mb-5">
+        <h2 class="fw-semibold border-bottom pb-2 mb-4">Досвід</h2>
+        <ul class="list-group list-group-flush shadow-sm rounded bg-light">
+            <li class="list-group-item">Працював із великими обсягами даних у навчальних проєктах.</li>
+            <li class="list-group-item">Використовував бази даних (PostgreSQL, MySQL), писав SQL-запити.</li>
+            <li class="list-group-item">Створював програми для фільтрації, сортування та обробки даних (Java, Python).</li>
+            <li class="list-group-item">Розробляв прості сайти.</li>
+            <li class="list-group-item">Опрацьовував файли (CSV, TXT), виконував парсинг, сортування та фільтрацію.</li>
+            <li class="list-group-item">Створював консольні застосунки на Java та Python.</li>
+        </ul>
+    </section>
+
+</div>
+{% endblock %}
