@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Greetings{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-3 mb-3">
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action" href="{{ url_for('users.greetings', name='John', age=30) }}">Greet John</a>
+      <a class="list-group-item list-group-item-action" href="{{ url_for('users.admin') }}">Admin</a>
+      <a class="list-group-item list-group-item-action" href="{{ url_for('resume') }}">Back to Resume</a>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <div class="card p-4 shadow-sm">
+      <h2 class="fw-bold">{{ name }}</h2>
+      {% if age %}
+      <p class="text-muted">Вік: {{ age }}</p>
+      {% else %}
+      <p class="text-muted">Вік не вказано</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

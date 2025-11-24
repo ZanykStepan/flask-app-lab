@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-4">
+  <section class="text-center mb-5">
+    <h1 class="fw-bold mb-3">Про себе</h1>
+    <img src="{{ url_for('static', filename='images/img.jpg') }}" alt="Моє фото" class="rounded-circle shadow mb-3 img-hover" width="160" height="160">
+    <p class="lead">Я — <strong>Степан Заник</strong>, 19 років.</p>
+  </section>
+</div>
+{% endblock %}

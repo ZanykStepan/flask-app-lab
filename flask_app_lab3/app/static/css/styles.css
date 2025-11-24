@@ -1,0 +1,5 @@
+body { background:#f6f6f6; font-family: 'Segoe UI', Tahoma, sans-serif; }
+.card { background: #fff; }
+.img-hover { transition: transform .25s ease; }
+.img-hover:hover { transform: scale(1.03); }
+.list-group-item { cursor: pointer; }
