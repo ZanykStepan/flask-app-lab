@@ -9,7 +9,7 @@ class ProductsTestCase(unittest.TestCase):
     def test_products_page(self):
         response = self.client.get('/products/')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Product 1', response.data)
+        self.assertIn(b'Apples', response.data)
 
 if __name__ == '__main__':
     unittest.main()

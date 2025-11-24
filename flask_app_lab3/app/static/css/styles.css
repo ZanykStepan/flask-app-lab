@@ -1,5 +1,32 @@
-body { background:#f6f6f6; font-family: 'Segoe UI', Tahoma, sans-serif; }
-.card { background: #fff; }
-.img-hover { transition: transform .25s ease; }
-.img-hover:hover { transform: scale(1.03); }
-.list-group-item { cursor: pointer; }
+body {
+    background-color: #f6f6f6;
+    font-family: Montserrat, serif;
+}
+
+section h1, section h2 {
+    color: #212529;
+}
+
+img.rounded-circle {
+    object-fit: cover;
+}
+
+ul.list-group-flush .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+
+.list-group-item {
+    background-color: transparent;
+}

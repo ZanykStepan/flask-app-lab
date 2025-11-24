@@ -5,7 +5,8 @@ products_bp = Blueprint('products', __name__, template_folder='templates', url_p
 @products_bp.route('/')
 def products_list():
     products = [
-        {'title': 'Product 1', 'desc': 'Опис 1'},
-        {'title': 'Product 2', 'desc': 'Опис 2'},
+        {'title': 'Apples', 'desc': 'Red'},
+        {'title': 'Oranges', 'desc': 'Orange'},
+        {'title': 'Bananas', 'desc': 'Yellow'},
     ]
     return render_template('products/list.html', products=products)
