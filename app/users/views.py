@@ -1,10 +1,11 @@
 from flask import Blueprint, request, redirect, url_for, render_template, flash, session, make_response
+from app.users.forms import LoginForm
 
 users_bp = Blueprint('users', __name__, template_folder='templates', static_folder='static', url_prefix='/users')
 
 USER_DATA = {
     "username": "user1",
-    "password": "123"
+    "password": "1234"
 }
 
 
@@ -13,19 +14,27 @@ def login():
     if 'username' in session:
         return redirect(url_for('users.profile'))
 
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
+    form = LoginForm()
+
+    if form.validate_on_submit():
+        username = form.username.data
+        password = form.password.data
+        remember = form.remember.data
 
         if username == USER_DATA['username'] and password == USER_DATA['password']:
             session['username'] = username
-            flash("Успішний вхід!", "success")
+
+            msg = "Успішний вхід!"
+            if remember:
+                msg += " (Функцію 'Запам'ятати мене' активовано)"
+
+            flash(msg, "success")
             return redirect(url_for('users.profile'))
         else:
             flash("Невірні дані! Спробуйте ще раз.", "danger")
             return redirect(url_for('users.login'))
 
-    return render_template('users/login.html', title='Вхід')
+    return render_template('users/login.html', title='Вхід', form=form)
 
 
 @users_bp.route('/logout')

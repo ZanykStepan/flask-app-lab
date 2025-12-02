@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "_render_field.html" import render_field %}
 
 {% block content %}
     <div class="row justify-content-center">
@@ -6,17 +7,23 @@
             <div class="card shadow mt-5">
                 <div class="card-body">
                     <h3 class="text-center mb-4">Login</h3>
-                    <form method="POST">
-                        <div class="mb-3">
-                            <label for="username" class="form-label">User name</label>
-                            <input type="text" class="form-control" id="username" name="username" required>
+
+                    <form method="POST" action="{{ url_for('users.login') }}" novalidate>
+                        {{ form.csrf_token }}
+
+                        {{ render_field(form.username) }}
+                        {{ render_field(form.password) }}
+
+                        <div class="mb-3 form-check">
+                            {{ form.remember(class="form-check-input") }}
+                            {{ form.remember.label(class="form-check-label") }}
                         </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required>
+
+                        <div class="d-grid">
+                            {{ form.submit(class="btn btn-primary") }}
                         </div>
-                        <button type="submit" class="btn btn-primary w-100">Sign In</button>
                     </form>
+
                 </div>
             </div>
         </div>

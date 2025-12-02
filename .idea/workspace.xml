@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d1b519a-36d6-442e-ace6-5480ed736c4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/users/templates/users/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/users/templates/users/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/_render_field.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/templates/users/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -53,7 +60,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "lab4",
+    "git-widget-placeholder": "lab5",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -129,7 +136,7 @@
       <updated>1764289614190</updated>
       <workItem from="1764289616629" duration="671000" />
       <workItem from="1764635196461" duration="39000" />
-      <workItem from="1764635248487" duration="3787000" />
+      <workItem from="1764635248487" duration="5424000" />
     </task>
     <servers />
   </component>

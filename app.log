@@ -1,0 +1,109 @@
+2025-12-02 03:52:10,369 INFO: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-12-02 03:52:10,370 INFO: [33mPress CTRL+C to quit[0m
+2025-12-02 03:52:10,370 INFO:  * Restarting with stat
+2025-12-02 03:52:10,652 WARNING:  * Debugger is active!
+2025-12-02 03:52:10,654 INFO:  * Debugger PIN: 118-536-248
+2025-12-02 03:52:15,478 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:15] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:52:15,579 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:15] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-12-02 03:52:15,771 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-02 03:52:15,951 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:15] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:52:15,982 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:15] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-12-02 03:52:16,139 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-02 03:52:16,484 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:16] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:52:16,515 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:16] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-12-02 03:52:16,662 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:16] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-02 03:52:18,003 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:18] "GET /users/hi/John HTTP/1.1" 200 -
+2025-12-02 03:52:18,047 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:52:18,840 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:18] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:52:18,893 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:18] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:52:24,423 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:24] "POST /users/login HTTP/1.1" 200 -
+2025-12-02 03:52:24,463 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:24] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:52:44,768 INFO:  * Detected change in 'D:\\study\\flask_app_zanyk\\app\\users\\views.py', reloading
+2025-12-02 03:52:44,838 INFO:  * Restarting with stat
+2025-12-02 03:52:45,559 WARNING:  * Debugger is active!
+2025-12-02 03:52:45,565 INFO:  * Debugger PIN: 118-536-248
+2025-12-02 03:52:47,919 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:47] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-02 03:52:47,941 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:47] "GET /users/profile HTTP/1.1" 200 -
+2025-12-02 03:52:48,041 INFO: 127.0.0.1 - - [02/Dec/2025 03:52:48] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:53:12,363 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:12] "GET /contacts HTTP/1.1" 200 -
+2025-12-02 03:53:12,399 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:12] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:53:22,019 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:22] "POST /contacts HTTP/1.1" 200 -
+2025-12-02 03:53:22,079 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:22] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:53:50,218 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:50] "[32mGET /users/logout HTTP/1.1[0m" 302 -
+2025-12-02 03:53:50,245 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:50] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:53:50,289 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:50] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:53:54,066 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:54] "POST /users/login HTTP/1.1" 200 -
+2025-12-02 03:53:54,106 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:54] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:53:56,976 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:56] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-02 03:53:56,984 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:56] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:53:57,026 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:57] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:53:59,309 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:59] "GET /users/hi/John HTTP/1.1" 200 -
+2025-12-02 03:53:59,361 INFO: 127.0.0.1 - - [02/Dec/2025 03:53:59] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:00,917 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:00] "GET /products/ HTTP/1.1" 200 -
+2025-12-02 03:54:00,951 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:00] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:02,162 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:02] "GET /contacts HTTP/1.1" 200 -
+2025-12-02 03:54:02,222 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:05,407 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:05] "GET / HTTP/1.1" 200 -
+2025-12-02 03:54:05,458 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:05] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:05,463 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:05] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-12-02 03:54:08,689 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:08] "GET /users/hi/John HTTP/1.1" 200 -
+2025-12-02 03:54:08,746 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:08] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:09,212 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:09] "GET /users/hi/John HTTP/1.1" 200 -
+2025-12-02 03:54:09,242 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:09] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:10,617 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:10] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:54:10,669 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:10] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:11,015 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:11] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:54:11,047 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:15,724 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:15] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-02 03:54:15,732 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:15] "GET /users/profile HTTP/1.1" 200 -
+2025-12-02 03:54:15,787 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:15] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:17,166 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:17] "[32mGET /users/change-theme/dark HTTP/1.1[0m" 302 -
+2025-12-02 03:54:17,177 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:17] "GET /users/profile HTTP/1.1" 200 -
+2025-12-02 03:54:17,215 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:17,939 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:17] "[32mGET /users/change-theme/light HTTP/1.1[0m" 302 -
+2025-12-02 03:54:17,946 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:17] "GET /users/profile HTTP/1.1" 200 -
+2025-12-02 03:54:17,991 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:19,713 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:19] "GET / HTTP/1.1" 200 -
+2025-12-02 03:54:19,757 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:19,764 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:19] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-12-02 03:54:20,755 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:20] "GET /contacts HTTP/1.1" 200 -
+2025-12-02 03:54:20,820 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:54:33,129 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:33] "GET /users/profile HTTP/1.1" 200 -
+2025-12-02 03:54:33,175 INFO: 127.0.0.1 - - [02/Dec/2025 03:54:33] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:58:18,812 INFO:  * Detected change in 'D:\\study\\flask_app_zanyk\\app\\views.py', reloading
+2025-12-02 03:58:18,939 INFO:  * Restarting with stat
+2025-12-02 03:58:19,298 WARNING:  * Debugger is active!
+2025-12-02 03:58:19,300 INFO:  * Debugger PIN: 118-536-248
+2025-12-02 03:58:38,910 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:38] "GET /users/profile HTTP/1.1" 200 -
+2025-12-02 03:58:39,012 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:39] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-12-02 03:58:39,199 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-02 03:58:41,718 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:41] "GET /contacts HTTP/1.1" 200 -
+2025-12-02 03:58:41,785 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:58:42,950 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:42] "[32mGET /users/logout HTTP/1.1[0m" 302 -
+2025-12-02 03:58:42,969 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:42] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:58:43,015 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:43] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:58:58,509 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:58] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 03:58:58,551 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:58] "GET /static/css/styles.css HTTP/1.1" 200 -
+2025-12-02 03:58:58,684 INFO: 127.0.0.1 - - [02/Dec/2025 03:58:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-12-02 03:59:01,996 INFO: 127.0.0.1 - - [02/Dec/2025 03:59:01] "GET / HTTP/1.1" 200 -
+2025-12-02 03:59:02,053 INFO: 127.0.0.1 - - [02/Dec/2025 03:59:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:59:02,057 INFO: 127.0.0.1 - - [02/Dec/2025 03:59:02] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-12-02 03:59:02,878 INFO: 127.0.0.1 - - [02/Dec/2025 03:59:02] "GET / HTTP/1.1" 200 -
+2025-12-02 03:59:02,921 INFO: 127.0.0.1 - - [02/Dec/2025 03:59:02] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 03:59:02,927 INFO: 127.0.0.1 - - [02/Dec/2025 03:59:02] "[36mGET /static/images/img.jpg HTTP/1.1[0m" 304 -
+2025-12-02 03:59:03,286 INFO: 127.0.0.1 - - [02/Dec/2025 03:59:03] "GET /contacts HTTP/1.1" 200 -
+2025-12-02 03:59:03,317 INFO: 127.0.0.1 - - [02/Dec/2025 03:59:03] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 04:01:11,351 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:11] "POST /contacts HTTP/1.1" 200 -
+2025-12-02 04:01:11,403 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:11] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 04:01:19,437 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:19] "POST /contacts HTTP/1.1" 200 -
+2025-12-02 04:01:19,478 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:19] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 04:01:35,819 INFO: User: User, Email: us@e.com, Subject: collaboration
+2025-12-02 04:01:35,819 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:35] "[32mPOST /contacts HTTP/1.1[0m" 302 -
+2025-12-02 04:01:35,828 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:35] "GET /contacts HTTP/1.1" 200 -
+2025-12-02 04:01:35,889 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:35] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 04:01:45,268 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:45] "GET /users/login HTTP/1.1" 200 -
+2025-12-02 04:01:45,324 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:45] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-12-02 04:01:55,310 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:55] "[32mPOST /users/login HTTP/1.1[0m" 302 -
+2025-12-02 04:01:55,316 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:55] "GET /users/profile HTTP/1.1" 200 -
+2025-12-02 04:01:55,378 INFO: 127.0.0.1 - - [02/Dec/2025 04:01:55] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
