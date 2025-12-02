@@ -1,0 +1,94 @@
+body {
+    background-color: #f6f6f6;
+    font-family: Montserrat, serif;
+}
+
+section h1, section h2 {
+    color: #212529;
+}
+
+img.rounded-circle {
+    object-fit: cover;
+}
+
+ul.list-group-flush .list-group-item {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+footer {
+    font-size: 0.9rem;
+}
+
+.list-group-item {
+    background-color: transparent;
+    color: inherit;
+}
+
+/* темна тема*/
+body.dark-theme {
+    background-color: #212529;
+    color: #f8f9fa;
+}
+
+body.dark-theme section h1,
+body.dark-theme section h2,
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6,
+body.dark-theme p{
+    color: #f8f9fa;
+}
+body.dark-theme .text-muted {
+    color: #adb5bd !important;
+}
+body.dark-theme .card {
+    background-color: #343a40;
+    color: #fff;
+    border-color: #454d55;
+}
+
+body.dark-theme .list-group-item {
+    color: #f8f9fa;
+    border-color: #454d55;
+}
+
+body.dark-theme .table {
+    color: #fff;
+    --bs-table-color: #fff;
+    border-color: #454d55;
+}
+
+body.dark-theme a {
+    color: #6ea8fe;
+}
+
+body.dark-theme a:hover {
+    color: #8bb9fe;
+}
+
+body.dark-theme footer {
+    border-top: 1px solid #444;
+    color: #adb5bd;
+}
+
+body.dark-theme .form-control,
+body.dark-theme .form-select {
+    background-color: #2b3035;
+    border-color: #495057;
+    color: #fff;
+}
+body.dark-theme input::placeholder,
+body.dark-theme textarea::placeholder {
+    color: #adb5bd;
+    opacity: 1;
+}
