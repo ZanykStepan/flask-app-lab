@@ -5,14 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d1b519a-36d6-442e-ace6-5480ed736c4a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/templates/_render_field.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/users/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/static/css/posts.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/static/img/default.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/templates/posts/add_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/templates/posts/delete_confirm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/templates/posts/detail_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/templates/posts/posts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/posts/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_posts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flask_app_zanyk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/flask_app_zanyk.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/contacts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/templates/users/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/users/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +33,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="SQL File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -54,23 +67,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "lab5",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab6&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.main">
     <configuration name="flask_app_zanyk" type="PythonConfigurationType" factoryName="Python">
       <module name="flask_app_zanyk" />
@@ -136,7 +150,10 @@
       <updated>1764289614190</updated>
       <workItem from="1764289616629" duration="671000" />
       <workItem from="1764635196461" duration="39000" />
-      <workItem from="1764635248487" duration="5424000" />
+      <workItem from="1764635248487" duration="5972000" />
+      <workItem from="1764714980760" duration="1874000" />
+      <workItem from="1765151176630" duration="4426000" />
+      <workItem from="1765242274273" duration="3486000" />
     </task>
     <servers />
   </component>

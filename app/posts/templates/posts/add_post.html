@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% from "_render_field.html" import render_field %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow">
+            <div class="card-body">
+                <h3>{{ title }}</h3>
+                <form method="POST">
+                    {{ form.hidden_tag() }}
+                    {{ render_field(form.title) }}
+                    {{ render_field(form.content) }}
+                    
+                    <div class="row">
+                        <div class="col-md-6">{{ render_field(form.category) }}</div>
+                        <div class="col-md-6">{{ render_field(form.publish_date) }}</div>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                        {{ form.is_active(class="form-check-input") }}
+                        {{ form.is_active.label(class="form-check-label") }}
+                    </div>
+
+                    {{ form.submit(class="btn btn-primary") }}
+                    <a href="{{ url_for('posts.get_posts') }}" class="btn btn-secondary">Скасувати</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
