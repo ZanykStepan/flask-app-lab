@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="alert alert-warning shadow-sm">
+        <h2 class="alert-heading">Підтвердження видалення</h2>
+        <p>Ви дійсно хочете видалити резюме <strong>"{{ resume.title }}"</strong>?</p>
+
+        <form method="POST" class="mt-4">
+            <button type="submit" class="btn btn-danger">Так, видалити</button>
+            
+            <a href="{{ url_for('resume.detail_resume', id=resume.id) }}" class="btn btn-secondary">Скасувати</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
