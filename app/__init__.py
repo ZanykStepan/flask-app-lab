@@ -3,9 +3,13 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from config import config
 from app.forms import ContactForm
+from flask_login import LoginManager
 
 db = SQLAlchemy()
 migrate = Migrate()
+login_manager = LoginManager()
+login_manager.login_view = 'users.login'
+login_manager.login_message_category = 'info'
 
 
 def create_app(config_name='default'):
@@ -14,7 +18,7 @@ def create_app(config_name='default'):
 
     db.init_app(app)
     migrate.init_app(app, db)
-
+    login_manager.init_app(app)
     from .users.views import users_bp
     app.register_blueprint(users_bp)
 
@@ -23,6 +27,12 @@ def create_app(config_name='default'):
 
     from .posts.views import posts_bp
     app.register_blueprint(posts_bp, url_prefix='/post')
+
+    from .resume.views import resume_bp
+    app.register_blueprint(resume_bp, url_prefix='/resume')
+
+    from app import models
+
     @app.route('/')
     def resume():
         return render_template('resume.html', title='Резюме')

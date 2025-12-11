@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="card mt-4">
+        <div class="card-header bg-dark text-white d-flex justify-content-between">
+            <span>{{ resume.title }}</span>
+            <span class="badge bg-warning text-dark">{{ resume.category.name }}</span>
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Навички: {{ resume.skills }}</h5>
+            <p class="card-text">{{ resume.description }}</p>
+            <p class="text-muted">Контактна особа: {{ resume.owner.username }}</p>
+
+            <div class="mt-3">
+                {% if current_user.is_authenticated and current_user == resume.owner %}
+                    <a href="{{ url_for('resume.edit_resume', id=resume.id) }}" class="btn btn-primary">Редагувати</a>
+                    <a href="{{ url_for('resume.delete_resume', id=resume.id) }}"
+                       class="btn btn-danger">Видалити</a>                {% endif %}
+
+                <a href="{{ url_for('resume.list_resumes') }}" class="btn btn-secondary">Назад</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

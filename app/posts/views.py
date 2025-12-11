@@ -65,4 +65,4 @@ def delete_post(id):
         flash("Пост видалено.", "danger")
         return redirect(url_for('posts.get_posts'))
 
-    return render_template('delete_confirm.html', post=post)
+    return render_template('delete_resume_confirm.html', post=post)
